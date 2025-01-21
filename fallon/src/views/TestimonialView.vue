@@ -4,6 +4,8 @@ import { defineComponent } from 'vue';
 
 import tesim1 from '@/assets/images/test2.png';
 import tesim2 from '@/assets/images/te2.png';
+import tesim3 from '@/assets/images/profil1.jpg';
+import tesim4 from '@/assets/images/profil2.jpg';
 
 export default defineComponent({
   name: "TestimonialView",
@@ -15,21 +17,21 @@ export default defineComponent({
       currentSlide: 0,
       testimonials: [
         {
+          name: "Anna",
+          image: tesim3,
+          quote: "The fish here is always top-notch, and the staff is super friendly.",
+          icon: tesim2,
+        },
+        {
           name: "Jonising",
           image: tesim1,
-          quote: "Variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised.",
+          quote: "Everything is fresh, well-priced, and beautifully presented. I won’t shop anywhere else!",
           icon: tesim2,
         },
         {
-          name: "A",
-          image: tesim1,
-          quote: "Variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised.",
-          icon: tesim2,
-        },
-        {
-          name: "B",
-          image: tesim1,
-          quote: "Variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised.",
+          name: "Bea",
+          image: tesim4,
+          quote: "The variety is impressive, and the fish look incredible. Great service too!",
           icon: tesim2,
         },
       ],

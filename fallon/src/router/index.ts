@@ -5,6 +5,7 @@ import CartView from '../views/CartView.vue'
 import testimonialView from "@/views/TestimonialView.vue";
 import blogView from "@/views/BlogView.vue";
 import FishView from "@/views/FishView.vue";
+import ty from "@/views/ty.vue";
 
 
 const router = createRouter({
@@ -48,6 +49,11 @@ const router = createRouter({
       name: 'cart',
       component: CartView,
     },
+    {
+      path: '/ty',
+      name: 'path',
+      component: ty,
+    }
   ],
 })
 

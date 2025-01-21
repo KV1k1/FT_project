@@ -43,5 +43,4 @@ export default defineComponent({
 </template>
 
 <style scoped>
-/* Add relevant styles */
 </style>

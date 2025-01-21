@@ -4,6 +4,8 @@ import FishImage1 from '@/assets/images/our_fish1.jpg';
 import FishImage2 from '@/assets/images/our_fish2.jpg';
 import FishImage3 from '@/assets/images/our_fish3.jpg';
 import FishImage4 from '@/assets/images/our_fish4.jpg';
+import FishImage5 from '@/assets/images/blue-striped.jpeg';
+import FishImage6 from '@/assets/images/angelfish.jpeg';
 import FishList from '@/components/FishList.vue';
 
 export default defineComponent({
@@ -16,6 +18,8 @@ export default defineComponent({
         { name: 'Fighting-fish', price: 300, image: FishImage2 },
         { name: 'Isolated-fish', price: 400, image: FishImage3 },
         { name: 'Tropical-fish', price: 500, image: FishImage4 },
+        { name: 'Blue-striped', price: 150, image: FishImage5 },
+        { name: 'Angelfish', price: 750, image: FishImage6 },
       ],
     };
   },

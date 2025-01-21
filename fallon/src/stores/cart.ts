@@ -1,13 +1,11 @@
 import { defineStore } from 'pinia';
 
-// Define a type for Fish items
 export type Fish = {
   name: string;
   price: number;
-  image: string; // Assuming `image` is part of the fish structure
+  image: string;
 };
 
-// Define a type for Cart items
 export type CartItem = Fish & { quantity: number };
 
 export const useCartStore = defineStore('cart', {

@@ -1,18 +1,18 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import FishItem from './FishItem.vue';
-import type { Fish } from "@/stores/cart"; // Import the Fish type
+import type { Fish } from "@/stores/cart";
 
 export default defineComponent({
   name: "FishList",
   components: { FishItem },
   props: {
     fishList: {
-      type: Array as () => Fish[], // Specify fishList as an array of Fish
+      type: Array as () => Fish[],
       required: true,
     },
     itemsPerSlide: {
-      type: Number, // Specify itemsPerSlide as a Number
+      type: Number,
       default: 3,
     },
   },

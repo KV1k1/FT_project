@@ -17,17 +17,17 @@ export default defineComponent({
   },
   data() {
     return {
-      isPopupVisible: false, // Refactored from `ref` to `data`
+      isPopupVisible: false,
     };
   },
   methods: {
     buyFish() {
       const cartStore = useCartStore();
       cartStore.addToCart(this.fish);
-      this.isPopupVisible = true; // Show popup
+      this.isPopupVisible = true;
     },
     closePopup() {
-      this.isPopupVisible = false; // Hide popup
+      this.isPopupVisible = false;
     },
   },
 })
@@ -72,7 +72,8 @@ export default defineComponent({
 }
 .ser_img img {
   border-radius: 10px;
-  max-height: 400px;
+  height: 400px;
+  width: 250px;
   object-fit: cover;
 }
 .read_more {

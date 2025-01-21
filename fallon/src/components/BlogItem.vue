@@ -11,14 +11,16 @@ export default defineComponent({
   },
   data() {
     return {
-      isExpanded: false, // Controls the expanded state
+      isExpanded: false,
     };
   },
   computed: {
     expandedDescription() {
-      return this.isExpanded
-        ? `${this.blog.description} ${this.blog.fullContent}`
-        : this.blog.description;
+      if (this.isExpanded) {
+        return this.blog.description + ' ' + this.blog.fullContent;
+      } else {
+        return this.blog.description;
+      }
     },
   },
   methods: {

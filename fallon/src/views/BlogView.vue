@@ -3,6 +3,8 @@ import {defineComponent} from 'vue'
 import BlogItem from "@/components/BlogItem.vue";
 import blogim1 from '@/assets/images/blog_fish1.jpg';
 import blogim2 from '@/assets/images/blog_fish2.jpg';
+import blogim3 from '@/assets/images/blog.jpg';
+import blogim4 from '@/assets/images/blog4.jpg';
 
 export default defineComponent({
   name: "BlogView",
@@ -14,7 +16,7 @@ export default defineComponent({
           date: '12 March',
           title: 'Big River Feeder Fishing ...',
           description:
-            'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...',
+            'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
           fullContent:
             'This is the full content of the Big River Feeder Fishing blog post. It includes detailed information about the topic and provides in-depth insights.',
           author: 'Water Fish',
@@ -24,7 +26,7 @@ export default defineComponent({
           date: '12 March',
           title: 'Trent Barbel – Last Minute',
           description:
-            'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...',
+            'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
           fullContent:
             'This is the full content of the Trent Barbel – Last Minute blog post. It includes detailed information about the topic and provides in-depth insights.',
           author: 'Water Fish',
@@ -36,24 +38,25 @@ export default defineComponent({
           date: '13 March',
           title: 'Night Fishing Adventures',
           description:
-            'Discover the beauty and excitement of fishing at night. This blog provides insights into the techniques and joys of night fishing...',
+            'Discover the beauty and excitement of fishing at night. This blog provides insights into the techniques and joys of night fishing.',
           fullContent:
             'This blog post provides an in-depth look at night fishing techniques, the best spots, and the equipment needed for a successful night fishing trip.',
           author: 'Night Fisher',
-          image: blogim1,
+          image: blogim3,
         },
         {
           date: '14 March',
           title: 'Bass Fishing Tips for Beginners',
           description:
-            'A beginner’s guide to bass fishing, covering the essential tips and tricks to get you started on this exciting journey today...',
+            'A beginner’s guide to bass fishing, covering the essential tips and tricks to get you started on this exciting journey today.',
           fullContent:
-            'This comprehensive guide includes tips for selecting the right equipment, understanding bass behavior, and mastering basic fishing techniques.',
+            'This comprehensive guide includes tips for selecting the right equipment, understanding bass behavior, and mastering basic fishing techniques.' +
+            'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           author: 'Expert Fisher',
-          image: blogim2,
+          image: blogim4,
         },
       ],
-      displayedCount: 2, // Initial number of blogs to display
+      displayedCount: 2,
     };
   },
   computed: {

@@ -27,9 +27,7 @@ export default defineComponent({
         phone: '',
         email: '',
         message: ''
-      }; // Reset errors
-
-      // Validate fields and update errors object
+      };
       if (!this.name.trim()) {
         this.errors.name = 'Name is required.';
       }
@@ -42,10 +40,8 @@ export default defineComponent({
       if (!this.message.trim()) {
         this.errors.message = 'Message is required.';
       }
-
-      // If no errors, submit the form
       if (Object.keys(this.errors.name).length === 0 && Object.keys(this.errors.phone).length === 0 && Object.keys(this.errors.email).length === 0 && Object.keys(this.errors.message).length === 0) {
-        alert('Form submitted successfully!');
+        this.$router.push('/ty');
       }
     },
   },
@@ -102,6 +98,5 @@ export default defineComponent({
 .error {
   color: red;
   font-size: 0.9rem;
-  margin-top: 5px;
 }
 </style>

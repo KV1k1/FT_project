@@ -55,9 +55,7 @@ export default defineComponent({
         </div>
         <div class="col-md-2 d_none">
           <ul class="email text_align_right">
-            <li><a href="Javascript:void(0)">Login <img src="../assets/images/use.png" alt="#"/></a></li>
-            <li><router-link to="/cart"><img src="../assets/images/sho.png" alt="#"/></router-link>></li>
-            <li><a href="Javascript:void(0)"><img src="../assets/images/sea.png" alt="#"/></a></li>
+            <li><router-link to="/cart">Cart <img src="../assets/images/sho.png" alt="#"/></router-link>></li>
           </ul>
         </div>
       </div>

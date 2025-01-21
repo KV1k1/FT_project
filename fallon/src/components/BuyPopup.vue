@@ -13,14 +13,12 @@ export default defineComponent({
       required: true,
     },
   },
-  emits: ['close', 'goToCart'],
+  emits: ['close'],
   methods: {
     closePopup() {
       this.$emit('close');
     },
-    goToCart() {
-      this.$emit('goToCart');
-    }
+
   },
 });
 </script>
